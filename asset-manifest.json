@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.a930414b.css",
+    "main.js": "/my_portfolio/static/js/main.945afc9e.js",
+    "static/js/453.acca0757.chunk.js": "/my_portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/imgSebastianBonilla.jpg": "/my_portfolio/static/media/imgSebastianBonilla.a9d2d4f8c4ae0f8f3fc8.jpg",
+    "index.html": "/my_portfolio/index.html",
+    "main.a930414b.css.map": "/my_portfolio/static/css/main.a930414b.css.map",
+    "main.945afc9e.js.map": "/my_portfolio/static/js/main.945afc9e.js.map",
+    "453.acca0757.chunk.js.map": "/my_portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a930414b.css",
+    "static/js/main.945afc9e.js"
+  ]
+}
