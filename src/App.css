@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+ */
+
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 60px); /* Ajusta la altura del header */
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 15px;
+  position: fixed; /* Hace que el sidebar sea fijo */
+  height: calc(100vh - 60px); /* Ajusta la altura del sidebar */
+  overflow-y: auto; /* Permite desplazarse si el contenido del sidebar es más grande */
+}
+
+.content {
+  margin-left: 25%;
+  width: 75%;
+  padding: 15px;
+  overflow-y: auto;
+  height: calc(100vh - 60px); /* Ajusta la altura del contenido */
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+
+/* GLOBAL */
