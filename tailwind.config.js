@@ -9,6 +9,7 @@ module.exports = {
       color_secondary: '#1F44B9',
       // ...
     }, */
+
     extend: {},
   },
   plugins: [],
