@@ -1,6 +1,10 @@
 /* import * as React from 'react'; */
 
-import DynamicReactIcons from "./DynamicReactIcons"; /* gestión de iconos dinámicos */
+import { FaRegFolderOpen, FaSuitcase } from "react-icons/fa6";
+import { FaSmileWink, FaClipboardList } from "react-icons/fa";
+import { IoMdPerson } from "react-icons/io";
+
+/* import DynamicReactIcons from "./DynamicReactIcons"; */ /* gestión de iconos dinámicos */
 
 function Sidebar() {
 
@@ -17,18 +21,17 @@ function Sidebar() {
                         <div class="flex relative pb-12">
                             <Line />
                             <a class=" flex w-full " href="https://www.google.com/?hl=es"> {/* bg-red-300 */}
-                                <Icon nameIcon={"IoMdPerson"} />
+                                <Icon Iconn={IoMdPerson} />
                                 <Text textOption={"SOBRE MI"} />
                             </a>
                         </div>
 
-                        {/* OPTION EXPERIENCIA */}
+                        {/* OPTION PROYECTOS */}
                         <div class="flex relative pb-12">
-                            {/* LINE */}
                             <Line />
-                            <a class=" flex w-full" href="https://www.google.com/?hl=es"> {/* bg-red-300 */}
-                                <Icon nameIcon={"FaSuitcase"} />
-                                <Text textOption={"EXPERIENCIA"} />
+                            <a class=" flex w-full " href="wwww.google.com"> {/* bg-red-300 */}
+                                <Icon Iconn={FaRegFolderOpen} />
+                                <Text textOption={"PROYECTOS"} />
                             </a>
                         </div>
 
@@ -36,19 +39,19 @@ function Sidebar() {
                         <div class="flex relative pb-12">
                             <Line />
                             <a class=" flex w-full" href="https://www.google.com/?hl=es"> {/* bg-red-300 */}
-                                <Icon nameIcon={"FaSmileWink"} />
+                                <Icon Iconn={FaSmileWink} />
                                 <Text textOption={"¿ ?"} />
                             </a>
                         </div>
 
-                        {/* OPTION PROYECTOS */}
+                        {/* OPTION EXPERIENCIA */}
                         <div class="flex relative">
-                            <a class=" flex w-full " href="wwww.google.com"> {/* bg-red-300 */}
-                                <Icon nameIcon={"FaRegFolderOpen"} />
-                                <Text textOption={"PROYECTOS"} />
+                            {/* <Line /> */}
+                            <a class=" flex w-full" href="https://www.google.com/?hl=es"> {/* bg-red-300 */}
+                                <Icon Iconn={FaSuitcase} />
+                                <Text textOption={"EXPERIENCIA"} />
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -60,17 +63,25 @@ function Sidebar() {
 
 const Line = () => {
     return (
-        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-12 absolute inset-0 flex items-center justify-center">
             <div class="h-full w-0.5 bg-black pointer-events-none"></div>
         </div>
     );
 };
 
-const Icon = ({ nameIcon }) => {
+        {/* <div class="w-12 h-12 rounded-full border-b-green-400  inline-flex items-center justify-center relative z-10 order-solid border-2 border-x-violet-400">
+            <a class="bg-orange-200 w-6 h-6" href='https://github.com/SebastianBonilla13'> 
+                {nameIcon && <DynamicReactIcons class="w-full h-full" iconNamee={nameIcon} />}
+            </a>
+        </div> */}
+
+const Icon = ({ Iconn }) => {
     return (
-        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-white  inline-flex items-center justify-center relative z-10 order-solid border-2 border-black"> {/* text-lime-500  */}
-            <a class=" " href='https://github.com/SebastianBonilla13'> {/* border-cyan-800 */}
-                {nameIcon && <DynamicReactIcons class="to-black" iconNamee={nameIcon} />}
+
+        <div class="w-12 h-12 bg-white rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-black">
+            <a class=" " href='https://github.com/SebastianBonilla13'> 
+                    <Iconn class="w-10 h-10 p-2" />
+                    {/* <DynamicReactIcons class="w-8 h-8 p-0" iconNamee={nameIcon}  /> */}
             </a>
         </div>
     );
