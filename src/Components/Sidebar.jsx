@@ -9,7 +9,7 @@ import { IoMdPerson } from "react-icons/io";
 function Sidebar() {
 
     return (
-        <section class="body-font w-full"> {/* text-gray-600 */}
+        <section class="w-full"> {/* text-gray-600 */}
 
             <div class="container px-5 py-24 mx-auto flex flex-wrap h-full "> {/* bg-slate-700  */}
 

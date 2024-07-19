@@ -5,6 +5,7 @@ import Sidebar from "../src/Components/Sidebar.jsx";
 
 /* import Card from "../src/Components/Card.jsx"; */
 import TableInfo from "./Components/TableInfo.jsx";
+import CardProject from "./Components/CardProject.jsx";
 
 import { FaGithub, FaLinkedin, FaRegFolderOpen, FaSuitcase } from "react-icons/fa6";
 import { FaSmileWink, FaClipboardList } from "react-icons/fa";
@@ -40,10 +41,10 @@ function App() {
 
         <div class="lg:max-w-4xl px-6 sm:px-20 pt-10 ">  {/* sm:px-1/6 bg-red-400 */}
 
-
-          <div class="flex justify-center "> {/* IMAGE CONTAINER */}  {/* bg-orange-500 min-w-64 */}
+          {/* IMAGE CONTAINER */}
+          <div class="flex justify-center ">
             <div class="w-52 border-solid border-color_primary border-black  border-8 rounded-full overflow-hidden ">
-              <img src={imgSebastianBonilla} /* style={{ width: "40%", paddingTop: "50px" }}  */ />
+              <img src={imgSebastianBonilla} />
             </div>
           </div>
 
@@ -64,8 +65,10 @@ function App() {
                 </a>
               </div> */}
 
+
+
               <div class="p-5">
-                <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-black"> {/* text-lime-500  */}
+                <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-black">
                   <a class=" " href='https://www.linkedin.com/in/sebastianbonilla13'>
                     <FaLinkedin class="w-10 h-10 p-2" />
                   </a>
@@ -73,7 +76,7 @@ function App() {
               </div>
 
               <div class="p-5">
-                <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-black"> {/* text-lime-500  */}
+                <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-black">
                   <a class=" " href='https://github.com/SebastianBonilla13'>
                     <FaGithub class="w-10 h-10 p-2" />
                   </a>
@@ -88,8 +91,9 @@ function App() {
           </div>
 
           <div class="grid gap-y-4 ">
-
-            <div class="text-left"> {/* NAME */}
+            
+            {/* NAME */}
+            <div class="text-left"> 
               <h1 class="text-5xl font-bold text-color_primary ">
                 Sebastián Bonilla
               </h1>
@@ -106,33 +110,35 @@ function App() {
                 Apasionado del diseño, combino habilidades de programación para crear interfaces limpias,
                 intuitivas y accesibles. Supero las expectativas de los usuarios, entregando experiencias
                 digitales atractivas y fáciles de usar.
-
-
               </p>
             </div>
 
 
             <br></br>
             <br></br>
-
-            {/* <div class="flex justify-center">
-              <Card> </Card>  
-            </div> */}
-
-
-            {/* <div>
+            <br></br>
+            <br></br>
+            
+            <div>
               <h2 class="text-xl font-bold text-color_primary" >
                 PROYECTOS
               </h2>
-            </div> */}
+            </div>
+
+            <div class="flex justify-center pt-4 sm:mx-8">
+              <CardProject> </CardProject>  
+            </div>
+
+
+            
 
             <div>
-              <h2 class="text-xl font-bold text-color_primary" >
+              <h2 class="text-xl font-bold text-color_primary pt-10" >
                 EXPERIENCIA
               </h2>
             </div>
 
-            <div class="flex justify-center pt-4">
+            <div class="flex justify-center pt-4 sm:mx-8">
               <TableInfo> </TableInfo>
             </div>
 
