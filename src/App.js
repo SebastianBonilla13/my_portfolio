@@ -128,7 +128,14 @@ function App() {
             <div class="flex justify-center pt-4 sm:mx-8">
               <CardProject> </CardProject>  
             </div>
+            
+            <div class="flex justify-center pt-10 sm:mx-8">
+              <CardProject> </CardProject>  
+            </div>
 
+            <div class="flex justify-center pt-10 sm:mx-8">
+              <CardProject> </CardProject>  
+            </div>
 
             
 
