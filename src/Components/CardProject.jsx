@@ -1,34 +1,28 @@
-import imgReportesPlus from "../Assets/imgReportesPlus.png";
+/* import imgReportesPlus from "../Assets/imgReportesPlus.png"; */
 import Badge from "./Badge.jsx";
 
-function CardProject() {
+
+
+function CardProject({ image, tittle, description, lstTech }) {
     return (
-
-        <div class="group p-6  rounded-3xl pl-6 border-solid border-2 border-slate-300 bg-slate-200 w-full"> {/* pt-48 pl-6 bg-lime-300 */}
-
-            <div class="group-hover:h-aut">
-
-
-                {/*  */}
+        <div class="group p-0  rounded-3xl border-solid border-2 border-slate-300 bg-slate-200 w-full overflow-hidden"> {/* pt-48 pl-6 bg-lime-300 */}
+            <div class="group-hover:h-auto group-hover:p-6 transition-all duration-1000 ease-in-out  ">
 
                 <div class="flex justify-center  ">
-                    <div class="w-full  group-hover:w-1/2 transition-all duration-700 ease-out">
-                        <img class="" src={imgReportesPlus} /* style={{ width: "40%", paddingTop: "50px" }}  */ />
+                    <div class=" w-full  group-hover:w-1/2 transition-all duration-1000 ease-in-out  ">
+                        <img class="" src={image} />
                     </div>
                 </div>
 
                 <div class="h-0 hidden group-hover:flex group-hover:h-full"> {/* group-hover:h-0 */}
-                    <div class="group-hover:z-10 group-hover:inset-0  group-hover:items-center bg-red-30 roup-hover:pl-0 roup-hover:opacity-0  transition-all duration-300 ease-out"> {/* group-hover:pl-0 group-hover:opacity-0  */}
+                    <div class="group-hover:z-10 group-hover:inset-0  group-hover:items-center bg-red-30 roup-hover:pl-0 roup-hover:opacity-0  transition-all duration-1000 ase-out "> {/* group-hover:pl-0 group-hover:opacity-0  */}
                         <div class="flex flex-col gap-y-2">
-                            <span class="text-2xl font-bold ">Reportes Plus</span> {/* max-w-[13ch] */}
-                            <p class=" mb-2 "> Información Presupuestal Universidad del Cauca. Proporcionar a los usuarios {/* w-full */}
-                                finales del área financiera e interesados de la  universidad, una herramienta
-                                que les permita consultar y descargar  información presupuestal en tiempo real.</p>
-                            <div class="flex flex-wrap gap-3">
-                                <Badge Text={"HTML"} > </Badge>
-                                <Badge Text={"Boostrap"} > </Badge>
-                                <Badge Text={"JavaScript"} > </Badge>
-                                <Badge Text={"React"}> </Badge>
+                            <span class="text-2xl font-bold pt-2"> {tittle} </span> {/* max-w-[13ch] */}
+                            <p class=" mb-2 "> {description} </p>
+                            <div class="flex flex-wrap gap-2">
+                                {lstTech.map((lechnology) => (
+                                    <Badge Text={lechnology} key={lechnology} />
+                                ))}
                             </div>
                         </div>
                     </div>
