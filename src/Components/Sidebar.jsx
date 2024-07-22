@@ -47,7 +47,7 @@ function Sidebar() {
                         {/* OPTION ¿? */}
                         <div class="flex relative">
                             <Line />
-                            <a class=" flex w-full" href="#¿?"> {/* bg-red-300 */}
+                            <a class=" flex w-full" href="#¿?">
                                 <Icon Iconn={FaSmileWink} />
                                 <Text textOption={"¿ ?"} />
                             </a>
@@ -64,7 +64,7 @@ function Sidebar() {
 const Line = () => {
     return (
         <div class="h-full pt-12 w-12 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-0.5 bg-zinc-700 pointer-events-none"></div>
+            <div class="h-full w-0.5 bg-slate-200 pointer-events-none"></div>
         </div>
     );
 };
@@ -78,9 +78,9 @@ const Line = () => {
 const Icon = ({ Iconn }) => {
     return (
 
-        <div class="w-12 h-12 rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-zinc-700">
-            <a class=" " href=''>
-                <Iconn class="w-10 h-10 p-2" color="#484848" />
+        <div class="w-12 h-12 rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-slate-200">
+            <a class=" ">
+                <Iconn class="w-10 h-10 p-2" color="#E2E8F0" />
                 {/* <DynamicReactIcons class="w-8 h-8 p-0" iconNamee={nameIcon}  /> */}
             </a>
         </div>
@@ -90,7 +90,7 @@ const Icon = ({ Iconn }) => {
 const Text = ({ textOption }) => {
     return (
         <div class="flex-grow pl-4 pt-3">
-            <h2 class="font-medium title-font text-sm text-zinc-700 mb-1 tracking-wider">{textOption}</h2>
+            <h2 class="font-medium title-font text-sm text-slate-200 mb-1 tracking-wider">{textOption}</h2>
             {/* <p class="leading-relaxed">Alguna descripción corta, como para el uso de pasosss.</p> */}
         </div>
     );

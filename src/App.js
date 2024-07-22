@@ -15,6 +15,8 @@ import { FaGithub, FaLinkedin, FaRegFolderOpen, FaSuitcase } from "react-icons/f
 import { FaSmileWink, FaClipboardList } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
 
+import { FaSearchengin } from 'react-icons/fa'
+
 // en sidebar, (quitar luego)
 /* FaRegFolderOpen
 FaSuitcase
@@ -40,11 +42,9 @@ let lstTechE2 = ["HTML", "CSS", "JavaScript", "React", "Figma", "Git"];
 
 function App() {
 
-
-
   return (
 
-    <div class="flex justify-between static"> {/* STRUCT */}
+    <div class="flex justify-between static bg-gradient-to-r from-slate-700  to-slate-800 "> {/* STRUCT */}
 
       <header class="hidden lg:flex lg:w-1/3 bg-color_primary lg:sticky lg:top-0 right-0  lg:max-h-screen w-max"> {/* SIDEAR */}  {/* bg-color_primary  lg:flex  lg:max-h-screen */}
         <Sidebar> </Sidebar>
@@ -54,17 +54,56 @@ function App() {
       <main class="lg:w-2/3"> {/* BODY */} {/* bg-lime-200 */}
 
         {/* <Badge Icon={FaSmileWink} Text={"HOLA"}> </Badge> */}
+        {/* <h1 class="[text-shadow:_0_1px_0_rgb(0__2_/_40%)]">Hello</h1> */}
 
         <div id="sobremi" class="lg:max-w-4xl px-6 sm:px-20 pt-10">
 
           {/* section SOBRE MI */}
           <div class="mb-60">
             {/* IMAGE CONTAINER */}
-            <div class="flex justify-center pt-5">
-              <div class="w-52 border-solid border-color_primary border-zinc-700 border-8 rounded-full overflow-hidden ">
+            {/* ring-1 ring-white ring-opacity-20 shadow-lg shadow-indigo-100/10 hover:shadow-indigo-100/25 */}
+
+            <div class="flex justify-center">
+
+              <div class="absolute z-40 mt-36 ml-44 pl-3">
+                <span class="relative flex h-4 w-4 ">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 ring-2 ring-green-400 "></span>
+                  <span class="relative inline-flex rounded-full h-4 w-4 bg-green-400 ring-2 ring-slate-300 "></span>
+                </span>
+              </div>
+
+              <div class="absolute z-20">
+                <div class="flex justify-center">
+                  <div class="w-52 rounded-full overflow-hidden ring-2 ring-slate-300 shadow-xl shadow-slate-100/30 over:shadow-slate-1/100">
+                    <img src={imgSebastianBonilla} />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            
+
+            {/* <span class="relative flex h-3 w-3 bg-red-400">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
+            </span>
+
+            <div class="flex justify-center pt-5 ">
+              <div class="w-52 order-solid order-color_primary order-slate-200 order-8 rounded-full overflow-hidden  ring-8 ring-slate-300 ing-opacity-20 shadow-xl shadow-slate-100/30 over:shadow-slate-1/100">
                 <img src={imgSebastianBonilla} />
               </div>
-            </div>
+            </div> */}
 
             {/* ICONS CONTAINER */}
             <div class="flex justify-center">
@@ -72,17 +111,17 @@ function App() {
 
                 {/* ICON */}
                 <div class="p-5">
-                  <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-zinc-700">
+                  <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-slate-200">
                     <a class=" " href='https://www.linkedin.com/in/sebastianbonilla13'>
-                      <FaLinkedin color="#484848" class="w-10 h-10 p-2" />
+                      <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
                   </div>
                 </div>
 
                 <div class="p-5">
-                  <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-zinc-700">
+                  <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-slate-200">
                     <a class=" " href='https://github.com/SebastianBonilla13'>
-                      <FaGithub color="#484848" class="w-10 h-10 p-2 zinc-700" />
+                      <FaGithub color="#e2e8f0" class="w-10 h-10 p-2 zinc-700" />
                     </a>
                   </div>
                 </div>
@@ -90,23 +129,24 @@ function App() {
               </div>
             </div>
 
+            {/* TEXTO */}
             <div class="grid gap-y-5 pt-3">
 
               {/* NAME */}
               <div class="text-left">
-                <h1 class="text-5xl font-bold text-zinc-700 text-color_primary ">
+                <h1 class="text-5xl font-bold text-slate-200 text-color_primary ">
                   Sebastián Bonilla
                 </h1>
               </div>
 
               <div>
-                <h2 class="text-3xl font-bold text-zinc-700 text-color_primary" >
+                <h2 class="text-3xl font-bold text-slate-300 text-color_primary" >
                   Software Developer
                 </h2>
               </div>
 
               <div>
-                <p class="text-base text-zinc-700 text-color_primary max-w-xl">
+                <p class="text-base text-slate-400 text-color_primary max-w-xl">
                   Apasionado del diseño, combino habilidades de programación para crear interfaces limpias,
                   intuitivas y accesibles. Supero las expectativas de los usuarios, entregando experiencias
                   digitales atractivas y fáciles de usar.
@@ -120,7 +160,7 @@ function App() {
           {/* section PROYECTOS */}
           <div id="proyectos" class="pt-10 mb-28">
 
-            <h2 class="text-xl font-bold text-zinc-700 text-color_primary" >
+            <h2 class="text-xl font-bold text-slate-300 text-color_primary" >
               PROYECTOS
             </h2>
 
@@ -131,12 +171,12 @@ function App() {
                 /* Reportes Plus */
                 tittle={
                   <>
-                    <a class="text-zinc-700">Reportes Plus</a>
+                    <a class="text-slate-200">Reportes Plus</a>
                   </>
                 }
                 description={
                   <>
-                    <div class="text-zinc-700">
+                    <div class="text-slate-300">
                       Información Presupuestal Universidad del Cauca. Proporcionar a los usuarios
                       finales del área financiera e interesados de la  universidad, una herramienta
                       que les permita consultar y descargar  información presupuestal en tiempo real.
@@ -154,12 +194,12 @@ function App() {
                 /* Reportes Plus */
                 tittle={
                   <>
-                    <a class="text-zinc-700">Reportes Plus</a>
+                    <a class="text-slate-200">Reportes Plus</a>
                   </>
                 }
                 description={
                   <>
-                    <div class="text-zinc-700">
+                    <div class="text-slate-300">
                       Información Presupuestal Universidad del Cauca. Proporcionar a los usuarios
                       finales del área financiera e interesados de la  universidad, una herramienta
                       que les permita consultar y descargar  información presupuestal en tiempo real.
@@ -175,7 +215,7 @@ function App() {
           {/* section EXPERIENCIA */}
           <div id="experiencia" class="pt-10 mb-28">
 
-            <h2 class="text-xl font-bold text-zinc-700 text-color_primary" >
+            <h2 class="text-xl font-bold text-slate-300 text-color_primary" >
               EXPERIENCIA
             </h2>
 
@@ -184,18 +224,18 @@ function App() {
               <TableInfo
                 tittle={
                   <>
-                    <a class="text-zinc-700">Ingeniero de Sistemas - Universidad del Cauca</a>
+                    <a class="text-slate-200">Ingeniero de Sistemas - Universidad del Cauca</a>
                   </>
                 }
                 date={
                   <>
-                    <a class="text-zinc-700">2018 - 2024</a>
+                    <a class="text-slate-400">2018 - 2024</a>
                   </>
                 }
                 description={
                   <>
-                    <div class="text-zinc-700">
-                      Estudiante de último semestre de <a class="underline decoration-zinc-700">Ingeniería de Sistemas</a>
+                    <div class="text-slate-300">
+                      Estudiante de último semestre de <a class="underline decoration-slate-300 ">Ingeniería de Sistemas </a>
                       en la Universidad del Cauca, donde he adquirido conocimientos sólidos en áreas como programación,
                       análisis de sistemas y gestión de proyectos. Durante mi trayectoria académica he participado en diversos
                       proyectos que me han permitido explorar y desarrollar habilidades en diferentes lenguajes de programación
@@ -214,17 +254,17 @@ function App() {
               <TableInfo
                 tittle={
                   <>
-                    <a class="text-zinc-700">Fronted Developer - ONE (Oracle Next Education)</a>
+                    <a class="text-slate-200">Fronted Developer - ONE (Oracle Next Education)</a>
                   </>
                 }
                 date={
                   <>
-                    <a class="text-zinc-700">2024 - PRESENTE</a>
+                    <a class="text-slate-400">2024 - PRESENTE</a>
                   </>
                 }
                 description={
                   <>
-                    <div class="text-zinc-700">
+                    <div class="text-slate-300">
                       <a class="underline decoration-zinc-700">Front-End:</a> Construcción de páginas web responsivas con HTML, CSS y JavaScript.<br />
                       <a class="underline decoration-zinc-700">React con JavaScript:</a> Creación de interfaces de usuarios.<br />
                       <a class="underline decoration-zinc-700">IA en el Front-End:</a> Optimización de desarrollo y generación de experiencias innovadoras.
@@ -238,11 +278,12 @@ function App() {
           </div>
 
           {/* section ¿? */}
-          <div id="¿?" class="pt-0 mb-24 g-red-400">
+          <div id="¿?" class="pt-0 mb-44 g-red-400">
             <div class=""> {/* text-center */}
-              <h2 class="text-2xl font-bold text-zinc-700 text-color_primary py-52" >
+              {/* <h2 class="text-3xl font-bold text-slate-300 text-color_primary py-52" >
                 ¿Te interesa impulsar tu proyecto al siguiente nivel? ¡Hagámoslo realidad!
-              </h2>
+              </h2> */}
+              <h2 class="text-xl py-52 md:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.blue.500),theme(colors.blue.200),theme(colors.blue.100),theme(colors.neutral.200),theme(colors.purple.200),theme(colors.purple.500))] bg-[length:100%_auto] animate-gradient">¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a></h2>
             </div>
           </div>
 
