@@ -117,7 +117,9 @@ function App() {
                       <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
                   </div> */}
-                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg hover:shadow-teal-300/35">
+                  {/* hover:shadow-slate-300/25 shadow-teal-300/15 | hover:shadow-teal-300/35*/}
+
+                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
                     <a class=" p-1" href='https://www.linkedin.com/in/sebastianbonilla13'>
                       <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
@@ -139,7 +141,7 @@ function App() {
                       <FaGithub color="#e2e8f0" class="w-10 h-10 p-2 zinc-700" />
                     </a>
                   </div> */}
-                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg hover:shadow-teal-300/35">
+                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
                     <a class=" p-1" href='https://github.com/SebastianBonilla13'>
                       <FaGithub color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
@@ -169,15 +171,28 @@ function App() {
                 </span> */}
               </div>
 
-              <div>
-                {/* <h2 class="text-3xl font-bold text-slate-300 text-color_primary" >
+              {/* <h2 class="text-3xl font-bold text-slate-300 text-color_primary" >
                   Software Developer
                 </h2> */}
+
+              {/* <div>
+                
                 <span class="absolute mr-5 x-auto py-0  font-extrabold flex border w-fit bg-gradient-to-r blur-2xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-4xl box-content  text-transparent  select-none">
                   <a class="underline decoration-blue-300"> Front-End Developer </a>
                 </span>
                 <span
                   class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-teal-300">
+                  Front-End Developer
+                </span>
+              </div> */}
+
+              <div>
+                <span
+                  class="absolute mr-6 text-4xl font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                  Front-End Developer
+                </span>
+                <span
+                  class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                   Front-End Developer
                 </span>
               </div>
@@ -200,7 +215,7 @@ function App() {
             <span class="absolute mr-5 x-auto py-0  font-extrabold flex border w-fit bg-gradient-to-r blur-xl from-teal-500 via-sky-600 to-cyan-800 bg-clip-text text-xl box-content  text-transparent  select-none">
               <a class="underline decoration-blue-300">PROYECTOS</a>
             </span>
-            <h2 class="text-xl font-extrabold text-slate-300 text-color_primary" >
+            <h2 class="text-xl font-extrabold text-slate-200 text-color_primary" >
               PROYECTOS
             </h2>
 
@@ -258,7 +273,7 @@ function App() {
             <span class="absolute mr-5 x-auto py-0  font-extrabold flex border w-fit bg-gradient-to-r blur-xl from-teal-500 via-sky-600 to-cyan-800 bg-clip-text text-xl box-content  text-transparent  select-none">
               <a class="underline decoration-blue-300">EXPERIENCIA</a>
             </span>
-            <h2 class="text-xl font-extrabold text-slate-300 text-color_primary" >
+            <h2 class="text-xl font-extrabold text-slate-200 text-color_primary" >
               EXPERIENCIA
             </h2>
 
@@ -267,8 +282,17 @@ function App() {
               <TableInfo
                 tittle={
                   <>
-                    <a class="text-slate-200">Ingeniero de Sistemas - Universidad del Cauca</a>
+                    {/* <a class="text-slate-200">Ingeniero de Sistemas - Universidad del Cauca</a> */}
+                    <span
+                      class="absolute mr-6 ext-base ont-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                      Ingeniero de Sistemas - Universidad del Cauca
+                    </span>
+                    <span
+                      class="ext-base ont-extrabold text-slate-200">
+                      Ingeniero de Sistemas - Universidad del Cauca
+                    </span>
                   </>
+
                 }
                 date={
                   <>
@@ -297,7 +321,15 @@ function App() {
               <TableInfo
                 tittle={
                   <>
-                    <a class="text-slate-200">Fronted Developer - ONE (Oracle Next Education)</a>
+                    {/* <a class="text-slate-200">Fronted Developer - ONE (Oracle Next Education)</a> */}
+                    {/* <span
+                      class="absolute mr-6 ext-base ont-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                      Fronted Developer - ONE (Oracle Next Education)
+                    </span> */}
+                    <span
+                      class="ext-base ont-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                      Fronted Developer - ONE (Oracle Next Education)
+                    </span>
                   </>
                 }
                 date={
@@ -360,13 +392,19 @@ function App() {
                 ¿Te interesa impulsar tu proyecto al siguiente nivel?
               </h1>
               <br></br>
-              <span class="absolute mr-5 mx-auto py-0 flex border w-fit bg-gradient-to-r blur-xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-4xl box-content font-extrabold text-transparent  select-none">
-                <a class="underline decoration-blue-300">¡Hagámoslo realidad!</a>
+
+              {/* <span class=" absolute r-5 x-auto py-0 lex order  bg-gradient-to-r lur-xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-4xl ox-content font-extrabold text-transparent  elect-none">
+                ¡Hagámoslo realidad!
+              </span> */}
+              <span
+                class="absolute mr-6 text-4xl font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                ¡Hagámoslo realidad!
               </span>
               <span
                 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                 ¡Hagámoslo realidad!
               </span>
+
 
             </div>
           </div>

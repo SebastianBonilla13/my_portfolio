@@ -3,6 +3,7 @@
 import { FaRegFolderOpen, FaSuitcase } from "react-icons/fa6";
 import { FaSmileWink, FaClipboardList } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 /* import DynamicReactIcons from "./DynamicReactIcons"; */ /* gestión de iconos dinámicos */
 
@@ -91,13 +92,49 @@ const Text = ({ textOption }) => {
     return (
 
         <div class="flex-grow pl-4 pt-3">
-            
-            <span class="absolute mr-5 x-auto py-0  font-bold flex border w-fit bg-gradient-to-r blur-lg hover:blur-sm from-teal-400 via-sky-300 to-cyan-600 bg-clip-text text-sm box-content  text-transparent  select-none ">
+
+            {/* <span class="absolute mr-5 x-auto py-0  font-bold flex border w-fit bg-gradient-to-r blur-lg hover:blur-sm from-teal-400 via-sky-300 to-cyan-600 bg-clip-text text-sm box-content  text-transparent  select-none ">
                 <a class="underline decoration-blue-300">{textOption}</a>
             </span>
             <h2 class="text-sm font-bold text-slate-300 text-color_primary" >
                 {textOption}
-            </h2>
+            </h2> */}
+
+            {/* <span class="absolute mr-5 x-auto py-0  font-bold flex border w-fit bg-gradient-to-r blur-lg hover:blur-sm from-teal-400 via-sky-300 to-cyan-600 bg-clip-text text-sm box-content  text-transparent  select-none ">
+                <a class="underline decoration-blue-300">{textOption}</a>
+            </span>
+            <h2 class="text-sm font-bold text-slate-300 text-color_primary" >
+                {textOption}
+            </h2> */}
+
+            {/* from-teal-600 via-sky-700 to-cyan-900 */}
+            {/* <span class="absolute text-sm mr-5 x-auto py-0  font-bold flex border w-fit bg-gradient-to-r blur-lg bg-slate-300  hover:blur-lg hover:from-teal-400 hover:via-sky-300 hover:to-cyan-600 bg-clip-text  box-content  text-transparent  select-none">
+              <a class="underline decoration-blue-300">{textOption}</a>
+            </span>
+            <h2 class="text-sm font-bold text-slate-200 text-color_primary" >
+                {textOption}
+            </h2> */}
+
+            {/* {hover && <div class="hover"> hola mundo </div>} */}
+
+            {/* <div class="hover && ">
+                <span class="absolute mr-6 text-sm font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                        {textOption}
+                </span>
+                <span class="text-sm font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                        {textOption}
+                </span>
+            </div> */}
+
+            <div class=" ">
+                <span class="absolute mr-6 text-sm font-extrabold hover:text-transparent hover:bg-clip-text blur-xl hover:bg-gradient-to-r hover:from-teal-300 hover:via-sky-200 hover:to-cyan-400">
+                    {textOption}
+                </span>
+                <span class="text-sm font-extrabold text-slate-300  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-teal-300 hover:via-sky-200 hover:to-cyan-400">
+                    {textOption}
+                </span>
+            </div>
+
 
             {/* <h2 class="font-medium title-font text-sm text-slate-200 mb-1 tracking-wider">{textOption}</h2> */}
             {/* <p class="leading-relaxed">Alguna descripción corta, como para el uso de pasosss.</p> */}
