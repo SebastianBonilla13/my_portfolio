@@ -44,7 +44,7 @@ function App() {
 
   return (
 
-    <div class="flex justify-between static bg-gradient-to-r from-slate-700  to-slate-800 "> {/* STRUCT */}
+    <div class="flex justify-between static bg-gradient-to-r from-slate-800  to-slate-900 "> {/* STRUCT */}
 
       <header class="hidden lg:flex lg:w-1/3 bg-color_primary lg:sticky lg:top-0 right-0  lg:max-h-screen w-max"> {/* SIDEAR */}  {/* bg-color_primary  lg:flex  lg:max-h-screen */}
         <Sidebar> </Sidebar>
@@ -65,6 +65,7 @@ function App() {
 
             <div class="flex justify-center">
 
+              {/* LUZ ESTADO */}
               <div class="absolute z-40 mt-36 ml-44 pl-3">
                 <span class="relative flex h-4 w-4 ">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 ring-2 ring-green-400 "></span>
@@ -74,14 +75,14 @@ function App() {
 
               <div class="absolute z-20">
                 <div class="flex justify-center">
-                  <div class="w-52 rounded-full overflow-hidden ring-2 ring-slate-300 shadow-xl shadow-slate-100/30 over:shadow-slate-1/100">
+                  <div class="w-52 rounded-full overflow-hidden ring-2 ring-slate-300 shadow-xl shadow-teal-300/35 over:shadow-slate-1/100 ">
                     <img src={imgSebastianBonilla} />
                   </div>
                 </div>
               </div>
 
             </div>
-            
+
             <br></br>
             <br></br>
             <br></br>
@@ -92,7 +93,7 @@ function App() {
             <br></br>
             <br></br>
             <br></br>
-            
+
 
             {/* <span class="relative flex h-3 w-3 bg-red-400">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -111,17 +112,36 @@ function App() {
 
                 {/* ICON */}
                 <div class="p-5">
-                  <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-slate-200">
+                  {/* <div class="w-10 h-10 border-opacity  rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-slate-200 hover:shadow-lg shadow-teal-300/90">
                     <a class=" " href='https://www.linkedin.com/in/sebastianbonilla13'>
+                      <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
+                    </a>
+                  </div> */}
+                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg hover:shadow-teal-300/35">
+                    <a class=" p-1" href='https://www.linkedin.com/in/sebastianbonilla13'>
                       <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
                   </div>
                 </div>
 
+
+                {/* <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg hover:shadow-teal-300/35">
+                  <a class=" p-1" href='https://www.linkedin.com/in/sebastianbonilla13'>
+                    <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
+                  </a>
+                </div> */}
+
+
+
                 <div class="p-5">
-                  <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-slate-200">
+                  {/* <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-slate-200">
                     <a class=" " href='https://github.com/SebastianBonilla13'>
                       <FaGithub color="#e2e8f0" class="w-10 h-10 p-2 zinc-700" />
+                    </a>
+                  </div> */}
+                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg hover:shadow-teal-300/35">
+                    <a class=" p-1" href='https://github.com/SebastianBonilla13'>
+                      <FaGithub color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
                   </div>
                 </div>
@@ -134,19 +154,36 @@ function App() {
 
               {/* NAME */}
               <div class="text-left">
-                <h1 class="text-5xl font-bold text-slate-200 text-color_primary ">
+                {/* <span class="absolute mr-5 mx-auto py-0 flex border w-fit pl- bg-gradient-to-r blur-xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-5xl box-content  text-transparent  select-none">
+                  <a class="underline decoration-blue-300"> Sebastián Bonilla </a>
+                </span> */}
+                <h1 class="text-5xl font-extrabold text-slate-200 text-color_primary ">
                   Sebastián Bonilla
                 </h1>
+                {/* <span class="absolute mr-5 mx-auto py-0 flex border w-fit bg-gradient-to-r blur-xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-4xl box-content font-extrabold text-transparent  select-none">
+                  <a class="underline decoration-blue-300"> Sebastián Bonilla</a>
+                </span>
+                <span
+                  class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                  Sebastián Bonilla
+                </span> */}
               </div>
 
               <div>
-                <h2 class="text-3xl font-bold text-slate-300 text-color_primary" >
+                {/* <h2 class="text-3xl font-bold text-slate-300 text-color_primary" >
                   Software Developer
-                </h2>
+                </h2> */}
+                <span class="absolute mr-5 x-auto py-0  font-extrabold flex border w-fit bg-gradient-to-r blur-2xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-4xl box-content  text-transparent  select-none">
+                  <a class="underline decoration-blue-300"> Front-End Developer </a>
+                </span>
+                <span
+                  class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-teal-300">
+                  Front-End Developer
+                </span>
               </div>
 
               <div>
-                <p class="text-base text-slate-400 text-color_primary max-w-xl">
+                <p class="text-base font-medium text-slate-300 text-color_primary max-w-xl">
                   Apasionado del diseño, combino habilidades de programación para crear interfaces limpias,
                   intuitivas y accesibles. Supero las expectativas de los usuarios, entregando experiencias
                   digitales atractivas y fáciles de usar.
@@ -160,7 +197,10 @@ function App() {
           {/* section PROYECTOS */}
           <div id="proyectos" class="pt-10 mb-28">
 
-            <h2 class="text-xl font-bold text-slate-300 text-color_primary" >
+            <span class="absolute mr-5 x-auto py-0  font-extrabold flex border w-fit bg-gradient-to-r blur-xl from-teal-500 via-sky-600 to-cyan-800 bg-clip-text text-xl box-content  text-transparent  select-none">
+              <a class="underline decoration-blue-300">PROYECTOS</a>
+            </span>
+            <h2 class="text-xl font-extrabold text-slate-300 text-color_primary" >
               PROYECTOS
             </h2>
 
@@ -215,7 +255,10 @@ function App() {
           {/* section EXPERIENCIA */}
           <div id="experiencia" class="pt-10 mb-28">
 
-            <h2 class="text-xl font-bold text-slate-300 text-color_primary" >
+            <span class="absolute mr-5 x-auto py-0  font-extrabold flex border w-fit bg-gradient-to-r blur-xl from-teal-500 via-sky-600 to-cyan-800 bg-clip-text text-xl box-content  text-transparent  select-none">
+              <a class="underline decoration-blue-300">EXPERIENCIA</a>
+            </span>
+            <h2 class="text-xl font-extrabold text-slate-300 text-color_primary" >
               EXPERIENCIA
             </h2>
 
@@ -279,11 +322,52 @@ function App() {
 
           {/* section ¿? */}
           <div id="¿?" class="pt-0 mb-44 g-red-400">
-            <div class=""> {/* text-center */}
+            <div class="py-52"> {/* text-center */}
               {/* <h2 class="text-3xl font-bold text-slate-300 text-color_primary py-52" >
                 ¿Te interesa impulsar tu proyecto al siguiente nivel? ¡Hagámoslo realidad!
               </h2> */}
-              <h2 class="text-xl py-52 md:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.blue.500),theme(colors.blue.200),theme(colors.blue.100),theme(colors.neutral.200),theme(colors.purple.200),theme(colors.purple.500))] bg-[length:100%_auto] animate-gradient">¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a></h2>
+              {/* <h2 class="text-xl py-52 md:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.blue.500),theme(colors.blue.200),theme(colors.blue.100),theme(colors.neutral.200),theme(colors.purple.200),theme(colors.purple.500))] bg-[length:100%_auto] animate-gradient">¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a></h2>
+ */}
+
+
+
+
+
+              {/* <h1
+                class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-slate-400 to-stone-500 ">
+
+                ¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a>
+
+              </h1> */}
+
+              <br></br>
+              <br></br>
+              <br></br>
+
+
+              {/* <span class="absolute   bg-gradient-to-r blur-xl from-teal-400 via-sky-300 to-cyan-700 bg-clip-text text-4xl font-extrabold text-transparent">
+                  ¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a>
+                </span>
+
+                <h1
+                  class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-sky-300 to-cyan-700">
+                  ¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300">
+                    <br></br>¡Hagámoslo realidad!</a>
+                </h1> */}
+
+              <h1
+                class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-sky-300 to-cyan-600">
+                ¿Te interesa impulsar tu proyecto al siguiente nivel?
+              </h1>
+              <br></br>
+              <span class="absolute mr-5 mx-auto py-0 flex border w-fit bg-gradient-to-r blur-xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-4xl box-content font-extrabold text-transparent  select-none">
+                <a class="underline decoration-blue-300">¡Hagámoslo realidad!</a>
+              </span>
+              <span
+                class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                ¡Hagámoslo realidad!
+              </span>
+
             </div>
           </div>
 

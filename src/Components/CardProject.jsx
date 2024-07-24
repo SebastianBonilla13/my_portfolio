@@ -5,7 +5,7 @@ import Badge from "./Badge.jsx";
 
 function CardProject({ image, tittle, description, lstTech }) {
     return (
-        <div class="group p-0 rounded-3xl w-full overflow-hidden   ring-1 ring-white ring-opacity-20 bg-white bg-opacity-5 shadow-lg shadow-indigo-100/10 hover:shadow-indigo-100/25"> {/* pt-48 pl-6 bg-lime-300 */}
+        <div class="group p-0 rounded-3xl w-full overflow-hidden   ring-1 ring-white ring-opacity-10 bg-white bg-opacity-5 shadow-lg shadow-teal-300/15 hover:shadow-teal-300/30"> {/* pt-48 pl-6 bg-lime-300 */}
             <div class="group-hover:h-auto group-hover:p-6 transition-all duration-1000 ease-in-out  ">
 
                 <div class="flex justify-center  ">
