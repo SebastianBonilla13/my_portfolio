@@ -4,6 +4,8 @@
 import React, { useRef } from 'react';
 import { useScroll } from 'react-scroll';
 
+import ToolTip1 from "./Components/ToolTip1.jsx";
+
 
 import Sidebar from "../src/Components/Sidebar.jsx";
 
@@ -46,12 +48,19 @@ function App() {
 
     <div class="flex justify-between static bg-gradient-to-r from-slate-800  to-slate-900 "> {/* STRUCT */}
 
-      <header class="hidden lg:flex lg:w-1/3 bg-color_primary lg:sticky lg:top-0 right-0  lg:max-h-screen w-max"> {/* SIDEAR */}  {/* bg-color_primary  lg:flex  lg:max-h-screen */}
-        <Sidebar> </Sidebar>
+
+      <header class="hidden lg:flex justify-center 2xl:w-3/5 2xl:justify-end lg:w-1/3 bg-color_primary lg:sticky lg:top-0 right-0  lg:max-h-screen w-max"> {/* SIDEAR */}  {/* bg-color_primary  lg:flex  lg:max-h-screen */}
+        <div class="flex justify-center">
+          <Sidebar> </Sidebar>
+        </div>
+
+
+
+
       </header>
 
 
-      <main class="lg:w-2/3"> {/* BODY */} {/* bg-lime-200 */}
+      <main class="lg:w-2/3 2xl:w-3/4 "> {/* BODY */} {/* bg-lime-200 */}
 
         {/* <Badge Icon={FaSmileWink} Text={"HOLA"}> </Badge> */}
         {/* <h1 class="[text-shadow:_0_1px_0_rgb(0__2_/_40%)]">Hello</h1> */}
@@ -63,15 +72,20 @@ function App() {
             {/* IMAGE CONTAINER */}
             {/* ring-1 ring-white ring-opacity-20 shadow-lg shadow-indigo-100/10 hover:shadow-indigo-100/25 */}
 
-            <div class="flex justify-center">
+            <div class="flex justify-center bg-red-400">
 
               {/* LUZ ESTADO */}
+
               <div class="absolute z-40 mt-36 ml-44 pl-3">
-                <span class="relative flex h-4 w-4 ">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 ring-2 ring-green-400 "></span>
-                  <span class="relative inline-flex rounded-full h-4 w-4 bg-green-400 ring-2 ring-slate-300 "></span>
-                </span>
+                <ToolTip1 position="bottom" tooltipsText="Disponible ;)">
+                  <span class="relative flex h-4 w-4 ">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 ring-2 ring-green-400 "></span>
+                    <span class="relative inline-flex rounded-full h-4 w-4 bg-green-400 ring-2 ring-slate-300 "></span>
+                  </span>
+                </ToolTip1>
               </div>
+
+
 
               <div class="absolute z-20">
                 <div class="flex justify-center">
@@ -110,21 +124,45 @@ function App() {
             <div class="flex justify-center">
               <div class="pt-1 pb-6 gap-x-5 grid grid-cols-2 grid-flow-row">
 
-                {/* ICON */}
                 <div class="p-5">
-                  {/* <div class="w-10 h-10 border-opacity  rounded-full inline-flex items-center justify-center relative z-10 order-solid border-2 border-slate-200 hover:shadow-lg shadow-teal-300/90">
-                    <a class=" " href='https://www.linkedin.com/in/sebastianbonilla13'>
-                      <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
-                    </a>
-                  </div> */}
-                  {/* hover:shadow-slate-300/25 shadow-teal-300/15 | hover:shadow-teal-300/35*/}
 
-                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
+                  {/* <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
                     <a class=" p-1" href='https://www.linkedin.com/in/sebastianbonilla13'>
                       <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
-                  </div>
+                  </div> */}
+
+                  <ToolTip1 position="bottom" tooltipsText="LinkedIn">
+                    <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
+                      <a class=" p-1" href='https://www.linkedin.com/in/sebastianbonilla13'>
+                        <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
+                      </a>
+                    </div>
+                  </ToolTip1>
+
                 </div>
+
+
+                {/* ICON */}
+                <div class="p-5">
+
+                  {/* <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
+                    <a class=" p-1" href='https://www.linkedin.com/in/sebastianbonilla13'>
+                      <FaLinkedin color="#e2e8f0" class="w-10 h-10 p-2" />
+                    </a>
+                  </div> */}
+
+                  <ToolTip1 position="bottom" tooltipsText="GitHub">
+                    <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
+                      <a class=" p-1" href='https://github.com/SebastianBonilla13'>
+                        <FaGithub color="#e2e8f0" class="w-10 h-10 p-2" />
+                      </a>
+                    </div>
+                  </ToolTip1>
+
+
+                </div>
+
 
 
                 {/* <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg hover:shadow-teal-300/35">
@@ -135,18 +173,19 @@ function App() {
 
 
 
-                <div class="p-5">
-                  {/* <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-slate-200">
+                {/* <div class="p-5"> */}
+                {/* <div class="w-10 border-opacity h-10 rounded-full inline-flex items-center justify-center relative z-10 border-solid border-2 border-slate-200">
                     <a class=" " href='https://github.com/SebastianBonilla13'>
                       <FaGithub color="#e2e8f0" class="w-10 h-10 p-2 zinc-700" />
                     </a>
                   </div> */}
-                  <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
+                {/* <div class="p-5 bg-transparent  w-10 h-10 rounded-full inline-flex items-center justify-center  border-2 border-slate-200 shadow-lg shadow-slate-300/15 hover:shadow-teal-300/30">
                     <a class=" p-1" href='https://github.com/SebastianBonilla13'>
                       <FaGithub color="#e2e8f0" class="w-10 h-10 p-2" />
                     </a>
-                  </div>
-                </div>
+                  </div> */}
+
+                {/* </div> */}
 
               </div>
             </div>
@@ -159,7 +198,7 @@ function App() {
                 {/* <span class="absolute mr-5 mx-auto py-0 flex border w-fit pl- bg-gradient-to-r blur-xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-5xl box-content  text-transparent  select-none">
                   <a class="underline decoration-blue-300"> Sebastián Bonilla </a>
                 </span> */}
-                <h1 class="text-5xl font-extrabold text-slate-200 text-color_primary ">
+                <h1 class="sm:text-5xl text-4xl font-extrabold text-slate-200 text-color_primary ">
                   Sebastián Bonilla
                 </h1>
                 {/* <span class="absolute mr-5 mx-auto py-0 flex border w-fit bg-gradient-to-r blur-xl from-teal-300 via-sky-200 to-cyan-400 bg-clip-text text-4xl box-content font-extrabold text-transparent  select-none">
@@ -188,17 +227,17 @@ function App() {
 
               <div>
                 <span
-                  class="absolute mr-6 text-4xl font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                  class="sm:text-4xl text-3xl absolute mr-6  font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                   Front-End Developer
                 </span>
                 <span
-                  class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                  class="sm:text-4xl text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                   Front-End Developer
                 </span>
               </div>
 
               <div>
-                <p class="text-base font-medium text-slate-300 text-color_primary max-w-xl">
+                <p class="text-base font-medium text-slate-300 text-color_primary max-w-2xl">
                   Apasionado del diseño, combino habilidades de programación para crear interfaces limpias,
                   intuitivas y accesibles. Supero las expectativas de los usuarios, entregando experiencias
                   digitales atractivas y fáciles de usar.
@@ -210,7 +249,7 @@ function App() {
           </div>
 
           {/* section PROYECTOS */}
-          <div id="proyectos" class="pt-10 mb-28">
+          <div id="proyectos" class="pt-10 mb-64">
 
             <span class="absolute mr-5 x-auto py-0  font-extrabold flex border w-fit bg-gradient-to-r blur-xl from-teal-500 via-sky-600 to-cyan-800 bg-clip-text text-xl box-content  text-transparent  select-none">
               <a class="underline decoration-blue-300">PROYECTOS</a>
@@ -226,8 +265,13 @@ function App() {
                 /* Reportes Plus */
                 tittle={
                   <>
-                    <a class="text-slate-200">Reportes Plus</a>
+                    {/* <a class="text-slate-200">Reportes Plus</a> */}
+                    <span
+                      class="ext-base ont-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                      Reportes Plus
+                    </span>
                   </>
+                  
                 }
                 description={
                   <>
@@ -243,10 +287,9 @@ function App() {
             </div>
 
             {/* Proyecto 2 */}
-            <div class="flex justify-center pt-8 sm:mx-8">
+            {/* <div class="flex justify-center pt-8 sm:mx-8">
               <CardProject
                 image={imgReportesPlus}
-                /* Reportes Plus */
                 tittle={
                   <>
                     <a class="text-slate-200">Reportes Plus</a>
@@ -263,7 +306,7 @@ function App() {
                 }
                 lstTech={lstTechP1}>
               </CardProject>
-            </div>
+            </div> */}
 
           </div>
 
@@ -283,12 +326,12 @@ function App() {
                 tittle={
                   <>
                     {/* <a class="text-slate-200">Ingeniero de Sistemas - Universidad del Cauca</a> */}
-                    <span
+                    {/* <span
                       class="absolute mr-6 ext-base ont-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                       Ingeniero de Sistemas - Universidad del Cauca
-                    </span>
+                    </span> */}
                     <span
-                      class="ext-base ont-extrabold text-slate-200">
+                      class="ext-base ont-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                       Ingeniero de Sistemas - Universidad del Cauca
                     </span>
                   </>
@@ -340,9 +383,9 @@ function App() {
                 description={
                   <>
                     <div class="text-slate-300">
-                      <a class="underline decoration-zinc-700">Front-End:</a> Construcción de páginas web responsivas con HTML, CSS y JavaScript.<br />
-                      <a class="underline decoration-zinc-700">React con JavaScript:</a> Creación de interfaces de usuarios.<br />
-                      <a class="underline decoration-zinc-700">IA en el Front-End:</a> Optimización de desarrollo y generación de experiencias innovadoras.
+                      <a class="underline decoration-teal-300"> <strong>Front-End:</strong></a> Construcción de páginas web responsivas con HTML, CSS y JavaScript.<br />
+                      <a class="underline decoration-teal-300"> <strong>React con JavaScript:</strong></a> Creación de interfaces de usuarios.<br />
+                      <a class="underline decoration-teal-300"> <strong>IA en el Front-End:</strong></a> Optimización de desarrollo y generación de experiencias innovadoras.
                     </div>
                   </>
                 }
@@ -353,17 +396,12 @@ function App() {
           </div>
 
           {/* section ¿? */}
-          <div id="¿?" class="pt-0 mb-44 g-red-400">
-            <div class="py-52"> {/* text-center */}
+          <div id="¿?" class="mt-80 mb-72 g-red-400 ">
+            <div class="py-3"> {/* text-center */}
               {/* <h2 class="text-3xl font-bold text-slate-300 text-color_primary py-52" >
                 ¿Te interesa impulsar tu proyecto al siguiente nivel? ¡Hagámoslo realidad!
               </h2> */}
-              {/* <h2 class="text-xl py-52 md:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.blue.500),theme(colors.blue.200),theme(colors.blue.100),theme(colors.neutral.200),theme(colors.purple.200),theme(colors.purple.500))] bg-[length:100%_auto] animate-gradient">¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a></h2>
- */}
-
-
-
-
+              {/* <h2 class="text-xl py-52 md:text-3xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.blue.500),theme(colors.blue.200),theme(colors.blue.100),theme(colors.neutral.200),theme(colors.purple.200),theme(colors.purple.500))] bg-[length:100%_auto] animate-gradient">¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a></h2>*/}
 
               {/* <h1
                 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-slate-400 to-stone-500 ">
@@ -372,23 +410,9 @@ function App() {
 
               </h1> */}
 
-              <br></br>
-              <br></br>
-              <br></br>
-
-
-              {/* <span class="absolute   bg-gradient-to-r blur-xl from-teal-400 via-sky-300 to-cyan-700 bg-clip-text text-4xl font-extrabold text-transparent">
-                  ¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300"> ¡Hagámoslo realidad!</a>
-                </span>
-
-                <h1
-                  class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-sky-300 to-cyan-700">
-                  ¿Te interesa impulsar tu proyecto al siguiente nivel? <a class="underline decoration-blue-300">
-                    <br></br>¡Hagámoslo realidad!</a>
-                </h1> */}
 
               <h1
-                class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-sky-300 to-cyan-600">
+                class="sm:text-4xl text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-sky-300 to-cyan-600">
                 ¿Te interesa impulsar tu proyecto al siguiente nivel?
               </h1>
               <br></br>
@@ -397,14 +421,13 @@ function App() {
                 ¡Hagámoslo realidad!
               </span> */}
               <span
-                class="absolute mr-6 text-4xl font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                class="sm:text-4xl text-2xl absolute mr-6  font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                 ¡Hagámoslo realidad!
               </span>
               <span
-                class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
+                class="sm:text-4xl text-2xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
                 ¡Hagámoslo realidad!
               </span>
-
 
             </div>
           </div>

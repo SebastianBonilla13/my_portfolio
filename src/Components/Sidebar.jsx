@@ -108,12 +108,16 @@ const Text = ({ textOption }) => {
             </h2> */}
 
             {/* from-teal-600 via-sky-700 to-cyan-900 */}
-            {/* <span class="absolute text-sm mr-5 x-auto py-0  font-bold flex border w-fit bg-gradient-to-r blur-lg bg-slate-300  hover:blur-lg hover:from-teal-400 hover:via-sky-300 hover:to-cyan-600 bg-clip-text  box-content  text-transparent  select-none">
-              <a class="underline decoration-blue-300">{textOption}</a>
-            </span>
-            <h2 class="text-sm font-bold text-slate-200 text-color_primary" >
+            <h2 class="absolute text-sm mr-5 x-auto py-0  font-bold flex border w-fit bg-gradient-to-r blur-lg bg-slate-100  hover:blur-lg hover:from-teal-200 hover:via-sky-100 hover:to-cyan-300 bg-clip-text  box-content  text-transparent  select-none">
                 {textOption}
-            </h2> */}
+            </h2>
+            <h2 class="text-sm font-bold text-slate-200 text-color_primar hover:text-slate-800" >
+                {textOption}
+            </h2>
+
+
+
+
 
             {/* {hover && <div class="hover"> hola mundo </div>} */}
 
@@ -126,14 +130,23 @@ const Text = ({ textOption }) => {
                 </span>
             </div> */}
 
-            <div class=" ">
+            {/* <div class=" ">
                 <span class="absolute mr-6 text-sm font-extrabold hover:text-transparent hover:bg-clip-text blur-xl hover:bg-gradient-to-r hover:from-teal-300 hover:via-sky-200 hover:to-cyan-400">
                     {textOption}
                 </span>
                 <span class="text-sm font-extrabold text-slate-300  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-teal-300 hover:via-sky-200 hover:to-cyan-400">
                     {textOption}
                 </span>
-            </div>
+            </div> */}
+
+            {/* <div class=" ">
+                <span class="absolute mr-6 text-sm font-extrabold hover:text-transparent hover:bg-clip-text blur-xl hover:bg-gradient-to-r hover:from-teal-300 hover:via-sky-200 hover:to-cyan-400">
+                    {textOption}
+                </span>
+                <span class="text-sm font-extrabold text-slate-300  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-teal-300 hover:via-sky-200 hover:to-cyan-400">
+                    {textOption}
+                </span>
+            </div> */}
 
 
             {/* <h2 class="font-medium title-font text-sm text-slate-200 mb-1 tracking-wider">{textOption}</h2> */}
