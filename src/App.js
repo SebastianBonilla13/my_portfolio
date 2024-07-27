@@ -36,7 +36,7 @@ let lstTechP1 = ["HTML", "CSS", "JavaScript", "React"];
 
 /* listado tecnologias Experiencia */
 let lstTechE1 = ["C", "C++", "C#", "HTML", "Java", "JavaScript", "Python", "SQL"];
-let lstTechE2 = ["HTML", "CSS", "JavaScript", "React", "Figma", "Git"];
+let lstTechE2 = ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Figma", "Git"];
 
 /* let lstT = ["Hola", "soy", "una", "etiqueta"]; */
 
@@ -429,6 +429,16 @@ function App() {
                 ¡Hagámoslo realidad!
               </span>
 
+            </div>
+          </div>
+
+          {/* section info */}
+          <div id="¿?" class="mt-96 mb-16 g-red-400 g-red-300 flex justify-center sm:px-32 ">
+            <div class="py-3"> {/* text-center */}
+              <h1 /* font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-sky-300 to-cyan-600 */
+                class="m:text-base text-base text-slate-400 text-center">
+                Diseñado en Figma y codificado en Visual Studio Code. Creado con React y estilado con Tailwind CSS.
+              </h1>
             </div>
           </div>
 

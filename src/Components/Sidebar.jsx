@@ -111,7 +111,7 @@ const Text = ({ textOption }) => {
             <h2 class="absolute text-sm mr-5 x-auto py-0  font-bold flex border w-fit bg-gradient-to-r blur-lg bg-slate-100  hover:blur-lg hover:from-teal-200 hover:via-sky-100 hover:to-cyan-300 bg-clip-text  box-content  text-transparent  select-none">
                 {textOption}
             </h2>
-            <h2 class="text-sm font-bold text-slate-200 text-color_primar hover:text-slate-800" >
+            <h2 class="text-sm font-bold text-slate-200 text-color_primar over:text-slate-800" >
                 {textOption}
             </h2>
 
