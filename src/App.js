@@ -12,12 +12,12 @@ import imgReportesPlus from "./Assets/imgReportesPlus.png";
 import imgEncriptadorTexto from "./Assets/imgEncriptadorTexto.png";
 
 /* listado tecnologias Proyectos */
-let lstTechP1 = ["Bootstrap", "JavaScript", "React"];
+let lstTechP1 = ["Bootstrap", "JavaScript", "React", "Figma"];
 let lstTechP2 = ["Tailwind CSS", "JavaScript", "React"];
 
 /* listado tecnologias Experiencia */
 let lstTechE1 = ["C", "C++", "C#", "HTML", "Java", "JavaScript", "Python", "SQL"];
-let lstTechE2 = ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Figma", "Git"];
+let lstTechE2 = ["Java", "Spring Boot", "PostgreSQL", "Postman", "Git"];
 
 
 function App() {
@@ -108,21 +108,32 @@ function App() {
               <div>
                 <span
                   class="sm:text-4xl text-3xl absolute mr-6 font-extrabold text-transparent bg-clip-text blur-xl bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
-                  Front-End Developer
+                  Back-End Developer
                 </span>
                 <span
                   class="sm:text-4xl text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
-                  Front-End Developer
+                  Back-End Developer
                 </span>
               </div>
 
-              <div>
+              {/* <div>
                 <p class="text-base font-medium text-slate-300 max-w-2xl">
                   Apasionado del diseño, combino habilidades de programación para crear interfaces limpias,
                   intuitivas y accesibles. Supero las expectativas de los usuarios, entregando experiencias
                   digitales atractivas y fáciles de usar.
                 </p>
+              </div>*/}
+
+              <div>
+                <p class="text-base font-medium text-slate-300 max-w-2xl">
+                  Apasionado por la construcción de la lógica detrás de las aplicaciones web.
+                </p>
+                <p class="text-base font-medium text-slate-300 max-w-2xl">
+                  Creo soluciones completas, eficientes y robustas. 
+                  Con conocimientos sólidos en Front-End, para ofrecer una visión integral del desarrollo.
+                </p>
               </div>
+
 
             </div>
 
@@ -155,9 +166,17 @@ function App() {
                 description={
                   <>
                     <div class="text-slate-300">
-                      Información Presupuestal Universidad del Cauca. Proporcionar a los usuarios
-                      finales del área financiera e interesados de la  universidad, una herramienta
-                      que les permita consultar y descargar  información presupuestal en tiempo real.
+                      <p>
+                        Información Presupuestal Universidad del Cauca. Proporcionar a los usuarios
+                        finales del área financiera e interesados de la  universidad, una herramienta
+                        que les permita consultar y descargar  información presupuestal en tiempo real.
+                      </p>
+                      <br>
+                      </br>
+                      <p>
+                        Creación de componentes reutilizables, considerando la usabilidad, el diseño atractivo y 
+                        responsive. Regimiento de atributos de calidad establecidos.
+                      </p>
                     </div>
                   </>
                 }
@@ -244,21 +263,21 @@ function App() {
                   <>
                     <span
                       class="ext-base ont-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-sky-200 to-cyan-400">
-                      Fronted Developer - ONE (Oracle Next Education)
+                      Backend Developer - ONE (Oracle Next Education)
                     </span>
                   </>
                 }
                 date={
                   <>
-                    <a class="text-slate-400">2024 - PRESENTE</a>
+                    <a class="text-slate-400">2024 - 2025</a>
                   </>
                 }
                 description={
                   <>
                     <div class="text-slate-300">
-                      <a class="underline decoration-teal-300"> <strong>Front-End:</strong></a> Construcción de páginas web responsivas con HTML, CSS y JavaScript.<br />
-                      <a class="underline decoration-teal-300"> <strong>React con JavaScript:</strong></a> Creación de interfaces de usuarios.<br />
-                      <a class="underline decoration-teal-300"> <strong>IA en el Front-End:</strong></a> Optimización de desarrollo y generación de experiencias innovadoras.
+                      <a class="underline decoration-teal-300"> <strong>Java:</strong></a> Dominio de herencia, interfaces y manejo de excepciones<br />
+                      <a class="underline decoration-teal-300"> <strong>Spring Boot Framework:</strong></a> APIs REST, desarrollo Web e integración con bases de datos<br />
+                      <a class="underline decoration-teal-300"> <strong>IA en el Back-End:</strong></a> Productividad y optimización de desarrollo con ChatGPT.
                     </div>
                   </>
                 }
@@ -295,7 +314,7 @@ function App() {
             <div class="py-3">
               <h1
                 class="m:text-base text-base text-slate-400 text-center">
-                Diseñado en Figma y codificado en Visual Studio Code. Creado con React y estilado con Tailwind CSS.
+                Hola. Diseñado en Figma y codificado en Visual Studio Code. Creado con React y estilado con Tailwind CSS.
               </h1>
             </div>
           </div>
